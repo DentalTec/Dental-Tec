@@ -1,0 +1,38 @@
+.containerFuncionario {
+
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px;
+    overflow-y: auto; /* scroll interno */
+    transform: scale(0.9); /* Diminui o tamanho geral para 90% */
+   overflow-x: hidden; /* remove barra scrol horizontal*/
+}
+.containerAnamnese{
+
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px;
+    overflow-y: auto; /* scroll interno */
+    transform: scale(0.9); /* Diminui o tamanho geral para 90% */
+   overflow-x: hidden; /* remove barra scrol horizontal*/
+}
+.containerInfoGeral{
+
+    margin: 0px;
+    padding: 15px; /* Espaçamento interno */
+}
+.containerRelatorio{
+    
+    margin: 0px;
+   padding-right: 100px;
+}
+
+button.btn {
+    margin-top: 0;   
+}
+.container {
+    margin-top: 50px; /* Espaçamento superior */
+    margin-bottom: 50px; /* Espaçamento inferior */
+}

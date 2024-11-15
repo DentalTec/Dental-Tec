@@ -1,0 +1,31 @@
+/* Cabeçalho da tabela */
+.table.table-striped.table-sm thead th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilos da tabela */
+.table.table-striped.table-sm {
+    color: rgb(12, 12, 12);
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 80%; /* Garante que a largura da tabela leve em consideração as margens */
+    table-layout: auto;  /* Permite que a tabela se ajuste ao conteúdo */
+    overflow-x: auto;  /* Scroll horizontal dentro da tabela */
+    display: block;  /* Faz a tabela se comportar como um bloco, permitindo o scroll interno */
+    white-space: nowrap;  /* Impede quebra de linha, forçando o scroll */
+}
+
+/* Alinhamento das células */
+.table.table-striped.table-sm td {
+    text-align: center;
+    vertical-align: middle;
+}
+.table.table-striped.table-sm th{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
