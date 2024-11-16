@@ -32,6 +32,7 @@
     overflow-y: auto; /* scroll interno */
     transform: scale(0.9); /* Diminui o tamanho geral para 90% */
    overflow-x: hidden; /* remove barra scrol horizontal*/
+   
 }
 .containerAnamnese{
 

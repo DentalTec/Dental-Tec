@@ -1,6 +1,6 @@
 /* Cabeçalho da tabela */
 .table.table-striped.table-sm thead th {
-    background-color: #007bff;
+    background-color: deepskyblue;
     color: white;
 }
 

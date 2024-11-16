@@ -32,7 +32,9 @@
 button.btn {
     margin-top: 0;   
 }
-.container {
-    margin-top: 50px; /* Espaçamento superior */
-    margin-bottom: 50px; /* Espaçamento inferior */
+.ContainerRelatorioDespesa {
+    margin-top: 0;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; /* Melhora o comportamento em dispositivos móveis */
+    color: aqua;
 }
