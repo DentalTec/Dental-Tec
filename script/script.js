@@ -1,4 +1,4 @@
-function confirmarExclusao() {
+function confirmarCancelar() {
     const confirmacao = confirm("Tem certeza que deseja excluir?");
     if (confirmacao) {
         alert("Funcionário excluído com sucesso!");
