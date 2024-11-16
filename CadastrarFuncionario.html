@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
+
 <html lang="pt-BR">
 <head>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +13,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/botoes_menu_inicio.css">
     <link rel="stylesheet" href="css/sub-menu-funcionario.css">
-    
+   
+    <style>
+        h6 {
+            font-weight: normal; /* Remove o negrito */
+            font-style: italic;  /* Torna o texto inclinado */
+        }
+
+
+        input.form-control,
+        select.form-select {
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="page">
@@ -25,83 +39,103 @@
     </div>
     <div class="navbar navbar-expand-md">    
         <div class="flex-shrink-0 p-3" style="width: 280px;" bis_skin_checked="1">
-                    
-            
+                   
+           
             <ul class="list-unstyled ps-0">
 
-                <!-------------Funcionário---------------------------------------------------------------------------->
-                <li class="mb-1">
-                  <a href="ConsultarFuncionario.html" class="BotoesMENU nav-link">
+
+              <!-------------Funcionário---------------------------------------------------------------------------->
+                <li class="mb-1">  
+                  <button class="BotoesMENU">
                     <i class="bi bi-person-circle"></i>
-                    Funcionário
-                  </a>
+                    Funcionário</button>
+                 
                 </li>
-                
-  
-                 <!------------Financeiro----------------------------------------------------------------------------->
-                 
-                 <li class="mb-1">
-                  <a href="ConsultarDespesas.html" class="BotoesMENU nav-link">
-                    <img src="img/Money.png" class="figura">
-                    Financeiro
-                  </a>
-                  </li>
-                 
+       
+             
+
+
+               <!------------Financeiro----------------------------------------------------------------------------->
                
-
-                 <!-------------Agenda---------------------------------------------------------------------------->
-                 <li class="mb-1">
-                  <a href="CadastrarAgenda.html" class="BotoesMENU nav-link">
-                    <i class="bi bi-calendar-fill"style="font-size: 25px; margin: 5px;"></i> 
-                    Agenda
-                  </a>
+                <li class="mb-1">
+                  <button class="BotoesMENU">
+                      <img src="img/Money.png" class="figura">
+                      Financeiro
+                  </button>
+                   
                   </li>
-
-                 <!-------------Paciente---------------------------------------------------------------------------->
-                 <li class="mb-1">
-                  <a href="CadastrarPaciente.html" class="BotoesMENU nav-link">
-                    <img src="img/pacientes.png" class="figura">
-                    Pacientes
-                  </a>
-                  </li>
-
-                 <!-----------------Consultas------------------------------------------------------------------------>
-                 <li class="mb-1">
-                  <a href="ConsultarConsulta.html" class="BotoesMENU nav-link">
-                    <img src="img/consulta.png" class="figura">
-                    Consultas
-                  </a>
-                  </li>
-
-                 <!----------------Produto------------------------------------------------------------------------->
-                 
-                 <li class="mb-1">
-                  <a href="CadastrarProduto.html" class="BotoesMENU nav-link">
-                    <img src="img/boxSeta.png" class="figura">Produto</button>
-                  </a>
-                  </li>
+               
+             
 
 
-                 <!--------------------Seviço--------------------------------------------------------------------->
-                 <li class="mb-1">
-                  <a href="CadastroServiço.html" class="BotoesMENU nav-link">
-                    <i class="bi bi-tools" style="font-size: 25px; margin: 5px;"></i>Serviço
-                  </a>
-                  </li>
+               <!-------------Agenda---------------------------------------------------------------------------->
+              <li class="mb-1">
+             
+                <button class="BotoesMENU">
+                  <i class="bi bi-calendar-fill"style="font-size: 25px; margin: 5px;"></i>
+                  Agenda</button>
+             
+              </li>
 
-                 <!-------------------Orçamento---------------------------------------------------------------------->
-                 <li class="mb-1">
-                  <a href="CadastroOrçamento.html" class="BotoesMENU nav-link">
-                    <img src="img/orçamento.png" class="figura">Orçamento
-                  </a>
-                  </li>
-              </ul>
-          </div> 
-          
+
+               <!-------------Paciente---------------------------------------------------------------------------->
+              <li class="mb-1">
+                <button class="BotoesMENU">
+                  <img src="img/pacientes.png" class="figura"> Pacientes
+                </button>
+                           
+              </li>
+
+
+               <!-----------------Consultas------------------------------------------------------------------------>
+              <li class="mb-1">
+                <button class="BotoesMENU">
+                  <img src="img/consulta.png" class="figura">
+                  Consultas</button>
+               
+              </li>
+
+
+               <!----------------Produto------------------------------------------------------------------------->
+               
+              <li class="mb-1">
+                <button class="BotoesMENU">
+                  <img src="img/boxSeta.png" class="figura">Produto</button>
+
+
+             
+              </li>
+
+
+               <!--------------------Seviço--------------------------------------------------------------------->
+              <li class="mb-1">
+                <button class="BotoesMENU">
+                  <i class="bi bi-tools" style="font-size: 25px; margin: 5px;"></i> Serviço
+                </button>
+             
+              </li>
+
+
+               <!-------------------Orçamento---------------------------------------------------------------------->
+              <li class="mb-1">
+                <button class="BotoesMENU">
+                  <img src="img/orçamento.png" class="figura">Orçamento
+                </button>
+               
+              </li>
+
+
+              <label class="TextoDental">DentalTec</label>
+              <p class="TextoVersao"> Versão 1.0</p>
+                <div class="navbar navbar-expand-md"></div>
+            </ul>
+          </div>
+         
         </div>
     </nav>
     <div class="containerFuncionario"> <!--Principal conteúdo-->
-        <h1>CADASTRAR FUNCIONÁRIO</h1>
+        <h1>CADASTRO DE FUNCIONÁRIO</h1>
+        <h6>Cadastre um novo funcionário no sistema.</h6>
         <hr>
         <br>
         <form>
@@ -124,7 +158,7 @@
                     <input type="password" class="form-control">  
                 </div>
             </div>
-    
+   
             <!-- Linha de CPF, Status, Cargo e Salário -->
             <div class="row">
                 <div class="form-group col-md-4">
@@ -157,7 +191,7 @@
                     <input type="text" class="form-control">  
                 </div>
             </div>
-    
+   
             <!-- Linha de RG, Expedidor, Data de Nascimento e CTPS -->
             <div class="row">
                 <div class="form-group col-md-3">
@@ -177,7 +211,7 @@
                     <input type="text" class="form-control">  
                 </div>
             </div>
-    
+   
             <!-- Outras linhas de dados (Estado Civil, Sexo, Data de Admissão, etc.) -->
             <div class="row">
                 <div class="form-group col-md-4">
@@ -205,7 +239,7 @@
                     <input type="date" class="form-control">  
                 </div>
             </div>
-    
+   
             <!-- Linha de Email, Telefone e CNH -->
             <div class="row">
                 <div class="form-group col-md-4">
@@ -221,7 +255,7 @@
                     <input type="text" class="form-control">  
                 </div>
             </div>
-    
+   
             <!-- Linha de CEP e Cidade -->
             <div class="row">
                 <div class="form-group col-md-6">
@@ -233,7 +267,7 @@
                     <input type="text" class="form-control">  
                 </div>
             </div>
-    
+   
             <!-- Linha de Rua, Número e Bairro -->
             <div class="row">
                 <div class="form-group col-md-4">
@@ -249,18 +283,29 @@
                     <input type="text" class="form-control">  
                 </div>
             </div>
-    
-            <!-- Botões -->
-            <div class="row">
-                <div class="form-group">
-                    <button type="button" class="btn btn-light col-1">SALVAR <i class="bi bi-floppy"></i></button>
-                    
+            <br>
+
+
+            <div class="row align-items-center">
+                <!-- Botão de Voltar -->
+                <a href="ConsultarFuncionario.html " class="col-auto"><button type="button" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Voltar</button></a>
+           
+                <!-- Espaço para empurrar os outros botões para o lado direito -->
+                <div class="col d-flex justify-content-end">
+                    <button type="button" class="btn btn-success mx-1" onclick="confirmarSalvar()">
+                        <i class="bi bi-floppy"></i> Salvar
+                    </button>
+                   
+                    <button type="button" class="btn btn-danger" onclick="confirmarCancelar()">
+                        <i class="bi bi-x-circle"></i> Cancelar
+                    </button>
                 </div>
             </div>
+           
         </form>
     </div>
-    
-    
+   
+    <script src="scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous">

@@ -35,6 +35,23 @@ button.btn {
 .ContainerRelatorioDespesa {
     margin-top: 0;
     overflow-x: auto; 
-    -webkit-overflow-scrolling: touch; /* Melhora o comportamento em dispositivos móveis */
+    -webkit-overflow-scrolling: touch; 
     color: aqua;
 }
+
+.table.table-striped.table-sm { /*Emitir Relatório Quadro */
+    margin: 0;
+ 
+
+}
+.ContainerAgendaCadastra{
+    margin: 0;
+    padding-left: 100px;
+    
+}
+.btn.btn-secondary {
+    margin: 0;
+    width: 85px;
+   margin-right: 10px;
+}
+
