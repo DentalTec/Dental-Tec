@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/botoes_menu_inicio.css">
     <link rel="stylesheet" href="css/sub-menu-funcionario.css">
     <link rel="stylesheet" href="css/container.css">
+    
+
 
 </head>
 <body>
@@ -116,80 +118,74 @@
         </div>
     </nav>
     <div class="container">
-      <br>
-      <div class="ContainerAgendaCadastra">
-        <h1>CADASTRAR AGENDA</h1>
-      <h6>Cadastre uma nova agenda no sistema</h6>
-      <hr>
-      <br>
-      <form>
-          <div class="row">
-              <div class="form-group col-3">
-               <h6>NOME </h6>
-               <select class="form-select">
-                  <option value="">PERTENSON OENNING</option>
-                  <option value="">FREDERICO BRITO</option>
-
-
-               </select>
-              </div>
-          </div>
+      <div class="alinhamento">
+          <br><br>
+          <h1>Cadastro de Agenda</h1>
+          <h6>Cadastre uma nova agenda no sistema</h6>
+          <hr>
           <br>
-          <div class="row">
-              <div class="form-group col-3">
-               <h6>PROFISSIONAL </h6>
-               <select class="form-select">
-                  <option value="">DR. MÁRCIO YEIJO</option>
-               </select>
+          <form>
+              <!-- Linha Nome e Profissional -->
+              <div class="row">
+                  <div class="form-group col-md-3">
+                      <h6>NOME</h6>
+                      <select class="form-select">
+                          <option value="">PERTENSON OENNING</option>
+                          <option value="">FREDERICO BRITO</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                      <h6>PROFISSIONAL</h6>
+                      <select class="form-select">
+                          <option value="">DR. MÁRCIO YEIJO</option>
+                      </select>
+                  </div>
               </div>
-          </div>
-          <br>
-          <div class="row">
-              <div class="form-group col-2">
-               <h6>DATA </h6>
-               <input type="date" class="form-control">
+              <br>
+  
+              <!-- Linha Data e Horário -->
+              <div class="row">
+                  <div class="form-group col-md-3">
+                      <h6>DATA</h6>
+                      <input type="date" class="form-control">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <h6>HORÁRIO</h6>
+                      <input type="text" class="form-control">
+                  </div>
               </div>
-          </div>
-          <br>
+              <br>
+          </form>
+  
+          <!-- Linha de Botões -->
           <div class="row">
-              <div class="form-group col-1">
-               <h6>HORÁRIO </h6>
-               <input type="text" class="form-control">
+              <!-- Botão Voltar -->
+              <div class="col-md-6">
+                  <button type="button" class="btn btn-secondary">
+                      <a href="ConsultarAgenda.html"><i class="bi bi-arrow"></i> Voltar</a>
+                  </button>
               </div>
-          </div>
-          <br>
-      </form>
-      <div class="row">
-          <!-- Botão de Voltar -->
-          <div class="form-group col-1">
-            <div class="col-auto"><button type="button" class="btn btn-secondary"><i class="bi bi-arrow-left"></i><a href="ConsultarAgenda.html">Voltar</a></button></div>
-          </div>
-          <style>
-
-
-              button a{
-                  text-decoration: none;
-                  color: white;
-              }
-              </style>
-             
-
-
-          <!-- Espaço para empurrar os outros botões para o lado direito -->
-          <div class="form-group col-3">
-
-
-            <button type="button" class="btn btn-success mx-1" onclick="confirmarSalvar()">
-              <i class="bi bi-floppy"></i> Salvar
-          </button>
-          <button type="button" class="btn btn-danger" onclick="confirmarCancelar()">
-            <i class="bi bi-x-circle"></i> Cancelar 
-        </button>
+  
+              <!-- Botões Salvar e Cancelar -->
+              <div class="col-md-6 d-flex justify-content-end">
+                  <button type="button" class="btn btn-success mx-1" onclick="confirmarSalvar()">
+                      <i class="bi bi-floppy"></i> Salvar
+                  </button>
+                  <button type="button" class="btn btn-danger" onclick="confirmarCancelar()">
+                      <i class="bi bi-x-circle"></i> Cancelar
+                  </button>
+              </div>
           </div>
       </div>
-      </div>
-      
   </div>
+  
+  <style>
+      button a {
+          text-decoration: none;
+          color: white;
+      }
+  </style>
+      
 
   <script src="script/script2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

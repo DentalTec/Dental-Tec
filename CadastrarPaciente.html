@@ -114,14 +114,15 @@
              
             </div>
         </nav>
-        <main> <!--Tudo que está dentro do main é o conteúdo principal-->
-          <div class="containerFuncionario"> <!-- Principal conteúdo -->
-            <h1>CADASTRAR PACIENTE</h1>
+
+        <div class="container"> 
+            <br><br>
+            <h1>Cadastro de Paciente</h1>
             <hr>
             <br>
             <form>
                 <!-- Linha de ID e Nome -->
-                <div class="row">
+                <div class="row g-2">
                     <div class="form-group col-md-2">
                         <label>ID:</label>
                         <input type="text" class="form-control form-control-sm">  
@@ -131,15 +132,12 @@
                         <input type="text" class="form-control form-control-sm">  
                     </div>
                 </div>
-       
+        
                 <!-- Linha de CPF, Status e Sexo -->
-                <div class="row">
+                <div class="row g-2">
                     <div class="form-group col-md-6">
                         <label>CPF:</label>
                         <input type="text" class="form-control form-control-sm">  
-                    </div>
-                    <div class="form-group col-md-1">
-                        <label></label>
                     </div>
                     <div class="form-group col-md-5">
                         <label>STATUS:</label>
@@ -150,10 +148,9 @@
                         </select>
                     </div>
                 </div>
-                <br>
-       
+        
                 <!-- Linha de RG, Expedidor e Data de Nascimento -->
-                <div class="row">
+                <div class="row g-2">
                     <div class="form-group col-md-3">
                         <label>RG:</label>
                         <input type="text" class="form-control form-control-sm">  
@@ -162,47 +159,41 @@
                         <label>EXPEDIDOR:</label>
                         <input type="text" class="form-control form-control-sm">  
                     </div>
-                    <div class="form-group col-md-1">
-                        <label></label>
-                    </div>
                     <div class="form-group col-md-5">
                         <label>DATA DE NASCIMENTO:</label>
                         <input type="date" class="form-control form-control-sm">  
                     </div>
                 </div>
-                <br>
-       
+        
                 <!-- Linha de Estado Civil, Sexo e Email -->
-                <div class="row">
-                  <div class="form-group col-md-4">
-                      <label>ESTADO CIVIL:</label>
-                      <select class="form-select form-select-sm">
-                          <option value="0"></option>
-                          <option value="1">SOLTEIRO</option>
-                          <option value="2">CASADO</option>
-                          <option value="3">DIVORCIADO</option>
-                          <option value="4">VIÚVO</option>
-                      </select>
-                  </div>
-                  <div class="form-group col-md-4">
-                      <label>SEXO:</label>
-                      <select class="form-select form-select-sm">
-                          <option value="0"></option>
-                          <option value="1">MASCULINO</option>
-                          <option value="2">FEMININO</option>
-                          <option value="3">PREFIRO NÃO DIZER</option>
-                      </select>
-                  </div>
-                  <div class="form-group col-md-4">
-                      <label>EMAIL:</label>
-                      <input type="email" class="form-control form-control-sm" placeholder="nome@exemplo.com">
-                  </div>
-              </div>
-             
-                <br>
-       
+                <div class="row g-2">
+                    <div class="form-group col-md-4">
+                        <label>ESTADO CIVIL:</label>
+                        <select class="form-select form-select-sm">
+                            <option value="0"></option>
+                            <option value="1">SOLTEIRO</option>
+                            <option value="2">CASADO</option>
+                            <option value="3">DIVORCIADO</option>
+                            <option value="4">VIÚVO</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>SEXO:</label>
+                        <select class="form-select form-select-sm">
+                            <option value="0"></option>
+                            <option value="1">MASCULINO</option>
+                            <option value="2">FEMININO</option>
+                            <option value="3">PREFIRO NÃO DIZER</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>EMAIL:</label>
+                        <input type="email" class="form-control form-control-sm" placeholder="nome@exemplo.com">
+                    </div>
+                </div>
+        
                 <!-- Linha de Telefone, CEP e Cidade -->
-                <div class="row">
+                <div class="row g-2">
                     <div class="form-group col-md-4">
                         <label>TELEFONE:</label>
                         <input type="text" class="form-control form-control-sm">  
@@ -216,10 +207,9 @@
                         <input type="text" class="form-control form-control-sm">  
                     </div>
                 </div>
-                <br>
-       
+        
                 <!-- Linha de Rua, Número e Bairro -->
-                <div class="row">
+                <div class="row g-2">
                     <div class="form-group col-md-4">
                         <label>RUA:</label>
                         <input type="text" class="form-control form-control-sm">  
@@ -233,18 +223,16 @@
                         <input type="text" class="form-control form-control-sm">  
                     </div>
                 </div>
-                <br>
-       
-                <div class="row align-items-center">
-                    <!-- Botão de Voltar -->
-                    <a href="ConsultarPaciente.html" class="col-auto"><button type="button" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Voltar</button></a>
-               
-                    <!-- Espaço para empurrar os outros botões para o lado direito -->
+                <br><br>
+                <!-- Linha de Botões -->
+                <div class="row align-items-center g-2">
+                    <a href="ConsultarPaciente.html" class="col-auto">
+                        <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Voltar</button>
+                    </a>
                     <div class="col d-flex justify-content-end">
                         <button type="button" class="btn btn-success mx-1" onclick="confirmarSalvar()">
                             <i class="bi bi-floppy"></i> Salvar
                         </button>
-                       
                         <button type="button" class="btn btn-danger" onclick="confirmarCancelar()">
                             <i class="bi bi-x-circle"></i> Cancelar
                         </button>

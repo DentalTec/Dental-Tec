@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CadastrarConsulta</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/botoes_menu_inicio.css">
@@ -39,7 +38,7 @@
                          <!------------Financeiro----------------------------------------------------------------------------->
                          
                          <li class="mb-1">
-                          <a href="ConsultarDespesas.html" class="BotoesMENU nav-link">
+                          <a href="ControlarCaixa.html" class="BotoesMENU nav-link">
                             <img src="img/Money.png" class="figura">
                             Financeiro
                           </a>
@@ -62,17 +61,17 @@
                             Pacientes
                           </a>
                           </li>
-
-
+      
+      
                           <!------------Anamnese----------------------------------------------------------------------------->
-                          <li class="mb-1">
-                            <a href="ConsultarAnamnese.html" class="BotoesMENU nav-link">
-                                <i class="bi bi-clipboard2-check-fill"background-color="white" style="font-size: 28px; margin: 5px;"></i>
-                              Anamnese
-                            </a>
-                          </li>
-
-
+                       <li class="mb-1">
+                        <a href="ConsultarAnamnese.html" class="BotoesMENU nav-link">
+                          <i class="bi bi-clipboard2-check-fill"background-color="white" style="font-size: 28px; margin: 5px;"></i>
+                          Anamnese
+                        </a>
+                        </li>
+      
+      
       
                          <!-----------------Consultas------------------------------------------------------------------------>
                          <li class="mb-1">
@@ -105,84 +104,110 @@
                           </a>
                           </li>
                       </ul>
-                        <label class="TextoDental">DentalTec</label>
-                        <p class="TextoVersao"> Versão 1.0</p>
-                          <div class="navbar navbar-expand-md"></div>
-                      </ul>
                   </div> 
                   
                 </div>
             </nav>
+            <main> <!--Tudo que esta dentro do main é o conteudo principal-->
+              <div class ="container">
+                
+                <h1 class="tituloafastar">Controle de Caixa</h1>
+        
+              <i class="bi bi-check-circle-fill" style="color: green;">  Status do caixa: Aberto</i>
             
-            <div class="container"> 
-                <br>
-                <h1>Cadastrar Consulta</h1>
-                <br>
-                <div class="row">
-                    <!-- Lado esquerdo -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>NOME: </label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>SERVIÇO: </label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>DATA: </label>
-                            <input type="date" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>PRODUTOS UTILIZADOS: </label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>PROFISSIONAL: </label>
-                            <input type="text" class="form-control">
-                        </div>
+
+                <div class = "row">
+                    <div class = "form-group col-4" >
+                       
+                        <button style = "background: none; border: none;">ABRIR CAIXA</button> <i class="bi bi-currency-exchange"></i>
                     </div>
-                    
-                    <!-- Lado direito -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>DESCRIÇÃO: </label>
-                            <textarea class="form-control" placeholder="Deixe uma descrição aqui" style="height: 150px"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>HORÁRIO: </label>
-                            <input type="time" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>VALOR: </label>
-                            <input type="text" class="form-control">
-                        </div>
+        
+        
+                    <div class="form-group col-4">
+                        <button style="background: none; border: none;" onclick="window.location.href='CaixaAtual.html'">
+                            CAIXA ATUAL
+                        </button>
+                    </div>
+                    <div class = "form-group col-4">
+                        <button style="background: none; border: none;" onclick="window.location.href='ControlarCaixa.html'">
+                            CAIXA ANTERIOR
+                        </button>
                     </div>
                 </div>
-            
-                <!-- Botões no canto esquerdo -->
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-success mx-1" onclick="confirmarSalvar()">
-                            <i class="bi bi-floppy"></i> Salvar
-                        </button>
-                        <button type="button" class="btn btn-danger mx-1" onclick="confirmarCancelar()">
-                            <i class="bi bi-x-circle"></i> Cancelar
-                        </button>
+                 </br>
+
+                 <div class = "row">
+                    <div class = "form-group col-5">
+                        <label>Saldo inicial</label> </br>
+                        <input type = "text" id = "VEntrada"  placeholder="R$235,30"/> 
                     </div>
+        
+        
+                    <div class = "form-group col-5">
+                        <label>Final de  Caixa</label>
+                    </br>
+                        <input type = "text" id = "VEntrada"  placeholder="R$1452,74"/> 
+                    </div>
+                </div>
+                 </br>
+
+                <div class = "row">
+                    <div class = "form-group col-5">
+                        <label>Total de Entrada</label> </br>
+                        <input type = "Text" id = "VEntrada"  placeholder="R$650,30"/> 
+                    </div>
+        
+        
+                    <div class = "form-group col-5">
+                        <label>Total de Saída</label>
+                    </br>
+                        <input type = "text" id = "VEntrada"  placeholder="R$0,00"/> 
+                    </div>
+                </div>
+                 </br>
+                <div class = "row">
+                    <div class = "form-group col-4">
+                        <label>ID</label>
+                        <input type = "text" id = "VEntrada"  placeholder="N°  001"/> 
+                    </div>
+        
+        
+                    <div class = "form-group col-5">
+                        <label>Secretario</label>
+                        <select class="form-select me-2">
+
+                            <option value="Ana Claudia">Ana Claudia</option>
+                            <option value="Elias ">Elias</option>
+                            <option value="Sthefany">Sthefany</option>
+                            <option value="Nathan">Nathan</option>
+                        
+                        </select>
+        
+        
+                    </div>
+        
+        
+                </div>
+            </br>
+                <div class = "row">
+                  <div class="row align-items-center">
+                    <!-- Botão de Voltar -->
+                    <div class="col-auto"><button type="button" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Voltar</button>
+                    </div>
+                
+                    <!-- Espaço para empurrar os outros botões para o lado direito -->
+                    <div class="col d-flex justify-content-end">
+                        <button type="button" class="btn btn-success mx-1"><i class="bi bi-floppy"></i> Salvar</button>
+                        <button type="button" class="btn btn-danger"><i class="bi bi-x-circle"></i> Cancelar</button>
+                    </div>
+                </div>
                 </div>
             </div>
-            
+            </main>
         </div>
     </div>
-    <script src="script/script2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Selecionar todos os checkboxes
-        document.getElementById('selectAll').addEventListener('change', function () {
-            const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
-            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 </html>

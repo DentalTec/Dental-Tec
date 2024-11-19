@@ -117,78 +117,92 @@
                  
                 </div>
             </nav>
-            <main> <!--Tudo que esta dentro do main é o conteudo principal-->
-              <div class ="container">
-                <h4>CADASTRAR PRODUTO</h4>
-       
-       
-                <div class = "row">
-                    <div class = "form-group col-4" >
-                        <label>PRODUTO</label>
-                        <input type = "text" class = "form-control">
-                    </div>
-       
-       
-                    <div class = "form-group col-4">
-                        <label>CÓDIGO DE BARRA</label>
-                        <input type = "text" class = "form-control">
-                    </div>
-                </div>
-                 </br>
-                <div class = "row">
-                    <div class = "form-group col-4">
-                        <label>DATA DE FABRICAÇÃO</label> </br>
-                        <input type = "date" id = "DataF"  placeholder="00/00/0000"/>
-                    </div>
-       
-       
-                    <div class = "form-group col-4">
-                        <label>DATA DE VALIDADE</label>
-                    </br>
-                        <input type = "date" id = "DataV"  placeholder="00/00/0000"/>
-                    </div>
-                </div>
-                 </br>
-                <div class = "row">
-                    <div class = "form-group col-4">
-                        <label>ID</label>
-                        <input type = "text" class = "form-control">
-                    </div>
-       
-       
-                    <div class = "form-group col-4">
-                        <label>VALOR</label>
-                        <input type = "text" class = "form-control"  placeholder="R$00,00">
-       
-       
-                    </div>
-       
-       
-                </div>
-            </br>
-                <div class = "row">
-                  <div class="row align-items-center">
-                    <!-- Botão de Voltar -->
-                    <div class="col-auto">
+            <!--Tudo que esta dentro do main é o conteudo principal-->
+            <div class="container">
+              <br>
+              <h1 class="tituloafastar">Cadastro Produto</h1>
+              <br>
+              <h6>Cadastre um novo produto no sistema</h6>
+         
+              <hr>
+              <br>
+          
+              <!-- Linha 1 -->
+              <div class="row">
+             
+                  <div class="form-group col-3">
+                      <label for="produto">PRODUTO</label>
+                      <input type="text" class="form-control" id="produto">
+                  </div>
+          
+                  <div class="form-group col-3">
+                      <label for="codigoBarras">CÓDIGO DE BARRA</label>
+                      <input type="text" class="form-control" id="codigoBarras">
+                  </div>
+              </div>
+          
+              <br>
+          
+              <!-- Linha 2 -->
+              <div class="row">
+                <div class="form-group col-3">
+                  <label for="idProduto">ID</label>
+                  <input type="text" class="form-control" id="idProduto">
+              </div>
+      
+              <div class="form-group col-3">
+                  <label for="valor">VALOR</label>
+                  <input type="text" class="form-control" id="valor" placeholder="R$00,00">
+              </div>
+              </div>
+          
+              <br>
+          
+              <!-- Linha 3 -->
+              <div class="row">
+                <div class="form-group col-3">
+                  <label for="dataFabricacao">DATA DE FABRICAÇÃO</label>
+                  <input type="date" class="form-control" id="dataFabricacao">
+              </div>
+      
+              <div class="form-group col-3">
+                  <label for="dataValidade">DATA DE VALIDADE</label>
+                  <input type="date" class="form-control" id="dataValidade">
+              </div>
+              </div>
+          
+              <br>
+          
+              <!-- Botões -->
+              <br>
+              <div class="row align-items-center">
+                  <!-- Botão de Voltar -->
+                  <div class="col-2">
                       <a href="ConsultarProduto.html" class="btn btn-secondary">
-                        <i class="bi bi-arrow-left"></i> Voltar
+                          <i class="bi bi-arrow-left"></i> Voltar
                       </a>
-                    </div>
-                    </div>
-               
-                    <!-- Espaço para empurrar os outros botões para o lado direito -->
-                    <div class="col d-flex justify-content-end">
+                  </div>
+          
+                  <!-- Botões de Ação -->
+                  <div class="col d-flex justify-content-end">
                       <button type="button" class="btn btn-success mx-1" onclick="confirmarSalvar()">
-                        <i class="bi bi-floppy"></i> Salvar
-                    </button>
-                    <button type="button" class="btn btn-danger" onclick="confirmarCancelar()">
-                      <i class="bi bi-x-circle"></i> Cancelar 
-                  </button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </main>
+                          <i class="bi bi-floppy"></i> Salvar
+                      </button>
+                      <button type="button" class="btn btn-danger" onclick="confirmarCancelar()">
+                          <i class="bi bi-x-circle"></i> Cancelar
+                      </button>
+                  </div>
+              </div>
+              <style>
+             
+                .form-group {
+                    margin-bottom: -30px; /* Diminui o espaçamento entre campos */
+                }
+            
+            </style>
+          </div>
+       
+           
         </div>
     </div>
     <script src="script/script2.js"></script>
