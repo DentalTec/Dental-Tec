@@ -1,0 +1,68 @@
+header{
+    background-color: #0da26b;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.topo{
+    display: flex;
+    align-items: center;
+}
+
+.opcoes{
+    margin-left: auto;
+}
+.itensMenu{
+    list-style: none;
+}
+.opcoes ul li{
+    display: inline;
+    font-size: 1.3em; /*unidade de medida, formata o tamanho da fonte*/
+    padding: 15px;
+}
+.opcoes ul li a{
+    text-decoration: none; /* apaga a linha que fica embaixo dos links*/
+    color: white;
+}
+#odontograma{
+    width: 450px;
+    height: 250px;
+}
+table{
+    width: 578px;
+    height: 150px;
+    margin-left: 650px;
+    margin-top: 0px;
+}
+.colunaOrçamento{
+    margin-left: 50px;
+    margin-bottom: -20px;
+   
+
+}
+.tabelinhaOrçamento{
+  
+    margin-left: 1500px;
+}
+tr[class="TrOrçamento"]{
+    background-color: rgb(168, 168, 168);
+}
+table{
+    border: none;
+}
+.TotalOrçamento{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.ValorTotal{
+    align-items: center;
+}
+i[class="bi bi-box-arrow-right"]{
+    color:blue;
+}
+.col-auto{
+    padding-left: 30px;
+   
+}
+

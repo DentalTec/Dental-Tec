@@ -1,0 +1,132 @@
+body[class="corinicial"] {
+    background-image: linear-gradient(to top, rgb(168, 168, 168), 40%, rgb(255, 255, 255), rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    height: 120vh; /* Ocupa a altura total da tela */
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex; 
+    position: relative;
+}
+
+.LoginLogo {
+    padding-top: 88px;
+    width: 750px; 
+    height: 500px; 
+    opacity: 30%;
+    margin-right: -100px; 
+}
+
+#todo {                     /* Retângulo do LOGIN */
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    width: 38%;
+    height: 450px;
+    border-radius: 15px;
+    padding: 25px;
+    margin-left: 100px;
+    border: 1px solid #000000; /* Borda */
+    box-shadow: 0 4px 8px rgba(119, 114, 114, 0.74); /* Sombra da borda */
+    
+}
+h1[class="ConsultaDepesatitulo"]{
+    font-size: 10px;
+    color: aqua;
+}
+
+
+.usuario {
+    
+    width: 100%;
+    margin-top: 35px;
+
+}
+
+.senha {
+    width: 100%;
+}
+
+.input-linha {          /* Linha das caixas de texto */
+    border: none; 
+    border-bottom: 1px solid black; /* add uma linha inferior */
+    outline: none; /* Remove o contorno do foco ao clicar no input */
+    width: 96%;
+    padding: 5px;
+    font-size: 16px;
+    display:inline;
+    margin-right: -25px; /*Altera a distancia dos icones dentro do input linha*/
+    border-bottom: 3px solid black; 
+}
+a[class="botaoLogin"] { /* Botão Login */
+    background-color: rgb(119, 127, 146); 
+    color: white; 
+    width: 25%; 
+    padding: 10px ; 
+    border-radius: 20px;
+    padding-left: 20px; 
+    border: none; 
+    cursor: pointer; 
+    display: block; /* Permite que o botão use margin auto */
+    text-decoration: none; /* Remove sublinhado */
+    margin-left: 260px;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    
+    
+
+}
+
+a[class="botaoLogin"]:hover {
+    background-color: rgb(50, 50, 50); /* Muda cor do botão com o cursor */
+}
+a[class="esqueceusenha"] {
+    position: relative;
+    padding-left: 190px;
+    text-decoration: none;
+    top: -39px; /*ajusta a altura ao topo*/
+    color:#000000;
+}
+input[class="form-check-input"]{
+    margin-top: 11px;
+}
+p[class="Lembrare-mail"]{
+    margin-top: 7px;  
+    
+}
+i[class="bi bi-person-fill"]{ /*User*/
+    
+    position: absolute;
+    font-size: 25px;
+    
+}
+i[class="bi bi-lock-fill"]{ /*Cadeado*/
+    font-size: 25px; 
+    position: absolute; /*coloca os icones na mesma linha do input*/
+
+
+}
+p[class="textologinlogin"]{
+  position: absolute;
+    font-size: 30px;
+}
+button[class="btn btn-success"]{
+    
+    
+    margin-left: auto;
+    padding-left: 20px;
+    margin-left: 180px;
+    border-radius: 13px;
+  
+}
+h1[class="textosempreenchimento"]{
+    color: transparent; /* Torna o preenchimento transparente */
+    -webkit-text-stroke: 2px black; /* Define o contorno do texto */
+   margin-left: 75px;
+}
+
+
+

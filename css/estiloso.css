@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+#Todo {
+   
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding-left: 50px;
+    display: flex;
+   
+ }
+
+
+ .Grupo1 input[type="radio"] {
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+ }
+
+
+
+
+.Grupo1{
+    display: flex;
+}
+button{
+    background: none;
+    border: none;
+}
+
+
+.Lupa{
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+
+h3{
+    font-weight: normal;
+}
+
+.Icone{
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+    height: 100px;
+}
+.form-select{
+    background-color: rgb(119, 117, 117);
+}
+table{
+    background-color: rgb(160, 155, 155);
+}
+
+button{
+    height: 100px;
+    font-size: 16px;
+    width: 100%;
+    
+}
+h1[class="ConsultaDepesatitulo"]{
+    font-size: 10px;
+    color: aqua;
+}

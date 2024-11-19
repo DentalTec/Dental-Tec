@@ -1,0 +1,63 @@
+.containerFuncionario {
+
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px;
+    overflow-y: auto; /* scroll interno */
+    transform: scale(0.9); /* Diminui o tamanho geral para 90% */
+   overflow-x: hidden; /* remove barra scrol horizontal*/
+}
+.containerAnamnese{
+
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px;
+    overflow-y: auto; /* scroll interno */
+    transform: scale(0.9); /* Diminui o tamanho geral para 90% */
+   overflow-x: hidden; /* remove barra scrol horizontal*/
+}
+.containerInfoGeral{
+
+    margin: 0px;
+    padding: 15px; /* Espaçamento interno */
+}
+.containerRelatorio{
+    
+    margin: 0px;
+   padding-right: 100px;
+}
+
+button.btn {
+    margin-top: 0;   
+}
+.ContainerRelatorioDespesa {
+    margin-top: 0;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    color: aqua;
+}
+
+.table.table-striped.table-sm { /*Emitir Relatório Quadro */
+    margin: 0;
+ 
+
+}
+.ContainerAgendaCadastra{
+    margin: 0;
+    padding-left: 100px;
+    
+}
+.btn.btn-secondary {
+    margin: 0;
+    width: 85px;
+   margin-right: 10px;
+}
+.containerCadastarDepesa{
+    margin: 0;
+   
+   margin-left: 80px;
+   width: 100%;
+}
+

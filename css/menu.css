@@ -1,0 +1,336 @@
+
+
+body[class="corinicial"]{
+    background-image: linear-gradient( to top, rgb(168, 168, 168), 40%, rgb(255, 255, 255), rgb(255, 255, 255));
+    overflow: hidden;
+
+}
+
+body{
+    background-color: #ffffff;
+}
+body[class="corcinza"]{
+    background-color: #7c7c7c;
+}
+.page{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.page2{
+    position: relative;
+    display: flex;
+}
+
+.nav-link{
+    margin-top: 0px;
+}
+img{
+    height: 100px;
+    width: 160px;
+   
+}
+@media (min-width: 660px) { 
+    .page{
+        flex-direction: row;
+        
+    }
+    .slidebar{
+        min-height: 170vh; /*expanção da lateral esquerda menu*/
+        width: 260px;
+        position: sticky;
+        top: 0;
+        display: block;
+        background-color: hsl(0, 0%, 51%);
+        
+    }
+}   
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+a:visited{
+    color:white;
+}
+a:hover{
+    color:white;
+}
+.conteudo{  /**/
+    margin-left: 90px;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+}
+.conteudo2{
+    margin-left: 90px;
+    margin-top: 60px;
+    width: 300px;
+    height: 300px;
+}
+.LogoFundo{
+    width: 760px;
+    height: 450px;
+}
+.Logo{
+    height: 80px;
+    width: 150px;
+    padding-left: 20px;
+ 
+
+}
+h1{
+margin-left: 200px;
+font-size: 32px;
+display: flex;
+
+
+
+}
+h2[class="tituloCadasOrçamento"]{   /*titulo Cadastro Orçamento*/
+    color: rgb(119, 119, 119);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+i[class="bi bi-envelope-fill"]{
+    padding-right: 14px;
+}
+
+
+label{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(59, 58, 58);
+    padding-right: 200px;
+}
+label[class="labelOrçamento"]{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:rgb(59, 58, 58);
+    padding-right: 200px;
+}
+label[class="PacienteAnamnese"]{
+
+    color: rgb(119, 119, 119);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+label[class="form-check-input"]{
+   color: #ebebeb;
+}
+label[class="TextoDental"]{
+    color:white;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+p[class="TextoVersao"]{
+    color:white;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+P{
+font-size: 15px;
+color: rgb(255, 255, 255);
+margin-right: 180px;
+opacity: 70%;
+}
+hr{
+    margin: 0;
+    width: 100%;
+}
+.figura{
+    width: 30px;
+    height: 30px;
+     margin: 5px;
+}
+.boxSeta{
+    width: 50px;
+    height: 50px;
+     margin: 5px;
+}
+.orçamento{
+    width: 40px;
+    height: 40px;
+     margin: 5px;
+}
+.pacientes{
+     width: 30px;
+     height: 30px;
+     margin: 5px;
+}
+.consultas{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.corfundoP{
+    background-color: rgb(255, 255, 255);
+}
+.container{
+  
+    color:rgb(0, 0, 0);
+
+}
+.quadroconsultafunci{
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 10px;
+}
+main{
+    width: 70%;
+    max-width: 1500px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+   
+    
+}
+span{
+   font-size: 30px;
+}
+button[type="submit"].btn {  /*BOTÃO SALVAR ANAMNESE*/
+    margin-top: 100px;
+    opacity: 60%;
+    display: flex;
+    flex-direction: column;  /* Coloca o ícone acima do texto */
+    align-items: center;      /* Centraliza o conteúdo horizontalmente */
+    width: 101px;                   
+    justify-content: center; 
+    font-size: 4rem;          /* Muda o tamanho da fonte, onde aumenta a imagem que esta dentro */
+    margin-left: 250px;
+  }
+h1[class="TituloCadasAnamnese"]{
+    margin: 0;
+ 
+    color: rgb(119, 119, 119);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+
+}
+select[class="form-control"]{
+   background-color: white;
+   color: black;
+}
+
+h1[class="ConsultaDepesatitulo"]{
+    font-size: 32px;
+    margin: 0px;
+    margin-bottom: 6px;
+}
+#odontograma{
+    width: 420px;
+    height: 250px;
+}
+table{
+    width: 650px;
+    height: 100px;
+    margin-left: 170px;
+    margin-bottom: 100px;
+    border: none;
+    
+}
+table[class="table table-hover"]{
+    
+    margin-top: -250px; /* Reduz o espaçamento acima da tabela */
+    
+}
+tr[class="TrOrçamento"]{
+    background-color: #cccccc;
+   
+}
+tr[class="CabeçadaTabela"]{
+    background-color: #cccccc;
+}
+#btn-salvar {       /*Botão Salvar com base Botão de anamnese pelo id*/
+ 
+  margin: 0;
+  font-size: 50px;
+}
+
+#btn-novo {     /*Botão Novo Orçamento*/
+    opacity: 60%;         
+    display: flex;
+    flex-direction: column;  /* Ícone acima do texto */
+    align-items: center;    
+    width: 101px;            /* Largura do botão */
+    border: none;   
+    padding-bottom: 10px;           /* Preenchimento interno */
+    margin: 0;
+    font-size: 70px;
+    background-color: transparent;
+   
+}
+#btn-salvarP{
+    margin: 0;
+    font-size: 50px;
+    padding-left: 360px;
+    padding-top: 18px;
+}
+#btn-novoP{
+    opacity: 60%;         
+    display: flex;
+    flex-direction: column;  /* Ícone acima do texto */
+    align-items: center;    
+    width: 101px;            /* Largura do botão */
+    border: none;   
+    padding-bottom: 10px;           /* Preenchimento interno */
+    margin: 0;
+    font-size: 70px;
+    background-color: transparent;
+    position: absolute;
+    padding-left: 500px;
+}
+input[class=form-control]{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+input[class=form-select]{
+    background-color: #959599;
+    color: #ffffff;
+}
+table[class="table table-hovers"]{
+    margin: 0;
+
+}
+
+tr[class="titulotabelaprodutoconsul"]{
+    background-color: #e0e0e0;
+    border: white solid 5px;
+}
+p[class="pretotexto"]
+{
+    color:black;
+    font-weight: bolder;
+    
+}
+tr[class="cinza"]{
+    background-color: #cacaca;
+}
+tr[class="cinzaescuro"]{
+    background-color: #9f9fa3;
+}
+
+input[id="idspace"]{
+    margin-bottom: 30px;
+}
+.EspaçoTrocaSenha{
+    width: 500px;
+    height: 600px;
+    background-color: #858585;
+    border-radius: 3%;
+    text-align: justify;
+    margin-left: 430px;
+}

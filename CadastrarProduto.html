@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastrarProduto</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/botoes_menu_inicio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub-menu-funcionario.css">
+
+</head>
+
+
+<body>
+    <div class="corfundoP">
+        <div class="page">
+            <nav class="slidebar">
+                <div class="container">
+                  <a href="TelaLogin.html" class="login">
+                    <img src="img/dentesss2.png" class="Logo" href="TelaLogin.html">
+                    <a class="bi bi-box-arrow-right" href="menu.html" style="color: rgb(51, 49, 49); font-size: 35px; font-weight: bolder; padding-left: 38px;" ></a>
+                </a>
+            </div>
+            <div class="navbar navbar-expand-md">    
+                <div class="flex-shrink-0 p-3" style="width: 280px;" bis_skin_checked="1">
+                           
+                  <ul class="list-unstyled ps-0">
+
+
+                    <!-------------Funcionário---------------------------------------------------------------------------->
+                    <li class="mb-1">
+                      <a href="ConsultarFuncionario.html" class="BotoesMENU nav-link">
+                        <i class="bi bi-person-circle"></i>
+                        Funcionário
+                      </a>
+                    </li>
+                   
+     
+                     <!------------Financeiro----------------------------------------------------------------------------->
+                     
+                     <li class="mb-1">
+                      <a href="CadastroDespesa.html" class="BotoesMENU nav-link">
+                        <img src="img/Money.png" class="figura">
+                        Financeiro
+                      </a>
+                      </li>
+                     
+                   
+ 
+                     <!-------------Agenda---------------------------------------------------------------------------->
+                     <li class="mb-1">
+                      <a href="ConsultarAgenda.html" class="BotoesMENU nav-link">
+                        <i class="bi bi-calendar-fill"style="font-size: 25px; margin: 5px;"></i>
+                        Agenda
+                      </a>
+                      </li>
+ 
+                     <!-------------Paciente---------------------------------------------------------------------------->
+                     <li class="mb-1">
+                      <a href="ConsultarPaciente.html" class="BotoesMENU nav-link">
+                        <img src="img/pacientes.png" class="figura">
+                        Pacientes
+                      </a>
+                      </li>
+
+
+                      <!------------Anamnese----------------------------------------------------------------------------->
+                      <li class="mb-1">
+                        <a href="ConsultarAnamnese.html" class="BotoesMENU nav-link">
+                          <i class="bi bi-clipboard2-check-fill"background-color="white" style="font-size: 28px; margin: 5px;"></i>
+                          Anamnese
+                        </a>
+                      </li>
+
+ 
+                     <!-----------------Consultas------------------------------------------------------------------------>
+                     <li class="mb-1">
+                      <a href="ConsultarConsulta.html" class="BotoesMENU nav-link">
+                        <img src="img/consulta.png" class="figura">
+                        Consultas
+                      </a>
+                      </li>
+ 
+                     <!----------------Produto------------------------------------------------------------------------->
+                     
+                     <li class="mb-1">
+                      <a href="ConsultarProduto.html" class="BotoesMENU nav-link">
+                        <img src="img/boxSeta.png" class="figura">Produto</button>
+                      </a>
+                      </li>
+ 
+ 
+                     <!--------------------Seviço--------------------------------------------------------------------->
+                     <li class="mb-1">
+                      <a href="ConsultarServiço.html" class="BotoesMENU nav-link">
+                        <i class="bi bi-tools" style="font-size: 25px; margin: 5px;"></i>Serviço
+                      </a>
+                      </li>
+ 
+                     <!-------------------Orçamento---------------------------------------------------------------------->
+                     <li class="mb-1">
+                      <a href="ConsultarOrçamento.html" class="BotoesMENU nav-link">
+                        <img src="img/orçamento.png" class="figura">Orçamento
+                      </a>
+                      </li>
+ 
+                    <label class="TextoDental">DentalTec</label>
+                    <p class="TextoVersao"> Versão 1.0</p>
+                      <div class="navbar navbar-expand-md"></div>
+                  </ul>
+                  </div>
+                 
+                </div>
+            </nav>
+            <main> <!--Tudo que esta dentro do main é o conteudo principal-->
+              <div class ="container">
+                <h4>CADASTRAR PRODUTO</h4>
+       
+       
+                <div class = "row">
+                    <div class = "form-group col-4" >
+                        <label>PRODUTO</label>
+                        <input type = "text" class = "form-control">
+                    </div>
+       
+       
+                    <div class = "form-group col-4">
+                        <label>CÓDIGO DE BARRA</label>
+                        <input type = "text" class = "form-control">
+                    </div>
+                </div>
+                 </br>
+                <div class = "row">
+                    <div class = "form-group col-4">
+                        <label>DATA DE FABRICAÇÃO</label> </br>
+                        <input type = "date" id = "DataF"  placeholder="00/00/0000"/>
+                    </div>
+       
+       
+                    <div class = "form-group col-4">
+                        <label>DATA DE VALIDADE</label>
+                    </br>
+                        <input type = "date" id = "DataV"  placeholder="00/00/0000"/>
+                    </div>
+                </div>
+                 </br>
+                <div class = "row">
+                    <div class = "form-group col-4">
+                        <label>ID</label>
+                        <input type = "text" class = "form-control">
+                    </div>
+       
+       
+                    <div class = "form-group col-4">
+                        <label>VALOR</label>
+                        <input type = "text" class = "form-control"  placeholder="R$00,00">
+       
+       
+                    </div>
+       
+       
+                </div>
+            </br>
+                <div class = "row">
+                  <div class="row align-items-center">
+                    <!-- Botão de Voltar -->
+                    <div class="col-auto">
+                      <a href="ConsultarProduto.html" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Voltar
+                      </a>
+                    </div>
+                    </div>
+               
+                    <!-- Espaço para empurrar os outros botões para o lado direito -->
+                    <div class="col d-flex justify-content-end">
+                      <button type="button" class="btn btn-success mx-1" onclick="confirmarSalvar()">
+                        <i class="bi bi-floppy"></i> Salvar
+                    </button>
+                    <button type="button" class="btn btn-danger" onclick="confirmarCancelar()">
+                      <i class="bi bi-x-circle"></i> Cancelar 
+                  </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </main>
+        </div>
+    </div>
+    <script src="script/script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Selecionar todos os checkboxes
+        document.getElementById('selectAll').addEventListener('change', function () {
+            const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+        });
+    </script>
+</body>
+</html>

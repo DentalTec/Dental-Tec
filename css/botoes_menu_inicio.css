@@ -1,0 +1,39 @@
+.BotoesMENU {
+    background-color: rgb(53, 52, 52);
+    color: white;
+    margin-left: 12px;
+    padding-top: 8px;           /*lado cima */
+    padding-bottom: 8px;        /*lado baixo */
+    padding-left: 20px;         /*lado esquerdo */
+    padding-right: 50px;        /*lado direito */
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* mãozinha*/
+    display: flex; 
+    align-items: center; 
+    width: 200px; /* alinhamento fixo */ 
+    height: 50px;
+
+}
+.BotoesMENU.nav-link:hover {
+    color: #ffffff; /* Cor do texto*/
+    background-color: #5f5f5f; /* Fundo Fundo*/
+    
+}
+
+.BotoesMENU i{
+    font-size: 20px;
+    margin-right: 12px; 
+    margin-left: 10px;
+}
+.BotoesMENU img.figura{
+    font-size: 20px;
+    margin-right: 10px; 
+    margin-left: 8  px;
+}
+
+.BotoesMENU img.figura {
+    filter: brightness(0) invert(1); /* Filtro que inverte do preto para branco */
+}
+

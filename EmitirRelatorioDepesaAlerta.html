@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Emitir Relatório de Despesa - Alerta</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>RELATÓRIO DE DESPESAS</h1>
+        <hr>
+        <br>
+        <form>
+            <div class="row align-items-end "> 
+                <div class="form-group col-3">
+                    <h6>PROFISSIONAL</h6>
+                    <select class="form-select">
+                        <option value="">DR. MÁRCIO</option>
+                    </select>
+                </div>
+                <div class="form-group col-2">
+                    <h6>PERÍODO</h6>
+                    <input type="text" class="form-control" placeholder="Data início">
+                </div>
+                <div class="form-group col-1 text-center">
+                    <h6 >À</h6>
+                </div>
+                <div class="form-group col-2">
+                    <input type="text" class="form-control" placeholder="Data fim">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-3">
+                 <h6>DESCRIÇÃO</h6>
+                 <textarea class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-light col-1">EMITIR <i class="bi bi-printer"></i></button>
+        </form>
+    </div>
+</body>
+</html>
